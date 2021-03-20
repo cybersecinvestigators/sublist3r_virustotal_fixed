@@ -671,7 +671,6 @@ class DNSdumpster(enumratorBaseThreaded):
                 self.subdomains.append(subdomain.strip())
         return links
 
-#5c61ed08d9a91bc327059b19cf18f7255a2f65ebac08832a5b93b9358e720bfa
 class Virustotal(enumratorBaseThreaded):
     def __init__(self, domain, subdomains=None, q=None, silent=False, verbose=True):
         subdomains = subdomains or []
@@ -686,7 +685,7 @@ class Virustotal(enumratorBaseThreaded):
     # the main send_req need to be rewritten
     def send_req(self, url):
         try:
-            resp = self.session.get(url, headers={"x-apikey":"5c61ed08d9a91bc327059b19cf18f7255a2f65ebac08832a5b93b9358e720bfa"}, timeout=self.timeout)
+            resp = self.session.get(url, headers={"x-apikey":"Your_API_KEY"}, timeout=self.timeout)
         except Exception as e:
             self.print_(e)
             resp = None
