@@ -24,3 +24,4 @@ SET UP
 USAGE
 
 sublist3r -d domain.com
+
